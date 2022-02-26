@@ -1,0 +1,33 @@
+name: lint and test
+
+on:
+  - push
+
+jobs:
+  build:
+    runs-on: macos-latest
+    strategy:
+      fail-fast: false
+
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-python@v2
+        with:
+          python-version: '3.x'
+      - name: Install dependencies
+        run: |
+          pip install poetry
+          make install
+      - name: lint-check
+        run: |
+          make lint
+      - name: pytest
+        run: |
+          make test
+      - name: Test code coverage
+        uses: paambaati/codeclimate-action@v2.7.4
+        env:
+          CC_TEST_REPORTER_ID: 8c42893b0411dccdab10d71cb8293158d09d9a2586664325e0f7138c64cf0a67
+        with:
+          coverageCommand: make test-coverage
+          debug: true
