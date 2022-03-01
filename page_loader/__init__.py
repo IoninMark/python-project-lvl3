@@ -1,1 +1,1 @@
-# from gendiff.diff_generator import generate_diff
+from page_loader.html_loader import download
