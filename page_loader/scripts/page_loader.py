@@ -14,5 +14,6 @@ def main():
     args = parser.parse_args()
     print(download(args.url_to_load, args.output))
 
+
 if __name__ == '__main__':
     main()
