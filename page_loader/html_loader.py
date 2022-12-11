@@ -2,7 +2,8 @@ import os
 import requests
 import sys
 from bs4 import BeautifulSoup
-from page_loader.filename_generator import generate_filename, generate_content_filename
+from page_loader.filename_generator import generate_filename
+from page_loader.filename_generator import generate_content_filename
 from urllib.parse import urljoin
 
 
@@ -31,7 +32,8 @@ def save_content(soup, content_folder, client, url, tag, inner):
                 filename = generate_content_filename(url, filename, ext)
                 file_url = urljoin(url, items.get(inner))
                 filepath = os.path.join(content_folder, filename)
-                items[inner] = os.path.join(os.path.basename(content_folder), filename)
+                content_dir = os.path.basename(content_folder)
+                items[inner] = os.path.join(content_dir, filename)
                 if not os.path.isfile(filepath):
                     with open(filepath, 'wb') as file:
                         file_bin = client.get(file_url)

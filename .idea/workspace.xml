@@ -5,13 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1d5441fd-0269-4af6-8616-7ea29a3bd6c9" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/page_loader/filename_generator.py" beforeDir="false" afterPath="$PROJECT_DIR$/page_loader/filename_generator.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/page_loader/html_loader.py" beforeDir="false" afterPath="$PROJECT_DIR$/page_loader/html_loader.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/poetry.lock" beforeDir="false" afterPath="$PROJECT_DIR$/poetry.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pyproject.toml" beforeDir="false" afterPath="$PROJECT_DIR$/pyproject.toml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/fixtures/test_file.html" beforeDir="false" afterPath="$PROJECT_DIR$/tests/fixtures/test_file.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/test_download.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_download.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
